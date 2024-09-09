@@ -1,0 +1,40 @@
+body {
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-family: "PT Sans", Calibri, Tahoma, sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.text {
+    order: 1;
+    flex: 1;
+    margin-right: 10rem;
+    font-size: large;
+}
+.image {
+    order: 2;
+    flex: 0.8;
+    margin-top: 5rem;
+    margin-left: 0rem;
+}
+.contacts {
+    padding-top: 10rem;
+}
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .text {
+        width: 100%;
+        order: 2;
+    }
+    .image {
+        order: 1;
+    }
+}
+
